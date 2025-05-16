@@ -8,23 +8,28 @@ namespace KishanKumarDas_Assignment_1.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            return View(new PriceQuotationModel());
+            return View();
         }
 
         [HttpPost]
-        public IActionResult Index(PriceQuotationModel model)
+        public IActionResult Index(PriceQuotationModel pcModel)
         {
             if (ModelState.IsValid)
             {
-                return View(model);
+                ViewBag.SubTotal = pcModel.SubTotal;
+                ViewBag.DiscountPercent = pcModel.DiscountPercent;
+                ViewBag.DiscountAmount = pcModel.DiscountAmount.ToString("0.00");
+                ViewBag.Total = pcModel.Total.ToString("0.00");
+            }
+            else
+            {
+                ViewBag.SubTotal = pcModel.SubTotal;
+                ViewBag.DiscountPercent = pcModel.DiscountPercent;
+                ViewBag.DiscountAmount = "0.00";
+                ViewBag.Total = "0.00";
             }
 
-            return View(model);
-        }
-
-        public IActionResult Clear()
-        {
-            return RedirectToAction("Index");
+            return View();
         }
     }
 }

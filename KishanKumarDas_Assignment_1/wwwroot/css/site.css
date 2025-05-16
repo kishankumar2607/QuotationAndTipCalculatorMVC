@@ -15,6 +15,29 @@ body {
     box-sizing: border-box;
 }
 
+.hover-card:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: #0056b3;
+    border: none;
+}
+
+    .btn-primary:hover {
+        background-color: #003d80;
+    }
+
 .price-quotation-div {
     background-color: #f0f1f8;
     display: flex;
@@ -74,6 +97,7 @@ body {
     border: 2px solid #000000;
     border-radius: 5px;
     background-color: transparent;
+    text-decoration: none;
     color: #000000;
     padding: 8px 18px;
     font-size: 18px;

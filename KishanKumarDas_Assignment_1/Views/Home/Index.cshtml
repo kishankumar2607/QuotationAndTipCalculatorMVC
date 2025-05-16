@@ -1,52 +1,29 @@
 ﻿@{
-    ViewData["Title"] = "Price Quotation";
+    ViewData["Title"] = "Home";
 }
 
-<div class="py-5 my-5">
-    <div class="container price-quotation-div">
-        <div>
-            <h1 class="price-quotation-heading text-center">Price Quotation</h1>
+<div class="container py-5">
+    <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold">Welcome to the Utility App</h1>
+        <p class="lead text-muted">Choose a tool below to get started</p>
+    </div>
 
-            <div class="row price-quotation-label-input-div mb-3">
-                <div class="col-md-6">
-                    <label class="text-black price-quotation-label">Enter Sub Total :</label>
-                </div>
-                <div class="col-md-6">
-                    <input id="subTotal" type="text" class="form-control price-quotation-input" />
+    <div class="row justify-content-center">
+        <div class="col-md-5 mb-4">
+            <div class="card shadow-sm h-100 border-0 hover-card">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Price Quotation</h5>
+                    <p class="card-text text-muted">Calculate discount and total from a subtotal and discount percentage.</p>
+                    <a href="/PriceQuotation" class="btn btn-primary">Go to Price Quotation</a>
                 </div>
             </div>
-
-            <div class="row price-quotation-label-input-div mb-3">
-                <div class="col-md-6">
-                    <label class="text-black price-quotation-label">Discount Percentage :</label>
-                </div>
-                <div class="col-md-6">
-                    <input id="discountPercentage" type="text" class="form-control price-quotation-input" />
-                </div>
-            </div>
-
-            <div class="row price-quotation-label-input-div mb-3">
-                <div class="col-md-6">
-                    <label class="price-quotation-label">Discount Amount :</label>
-                </div>
-                <div class="col-md-6">
-                    <label class="price-quotation-label">$0.00</label>
-                </div>
-            </div>
-
-            <div class="row price-quotation-label-input-div mb-3">
-                <div class="col-md-6">
-                    <label class="price-quotation-label">Total Amount :</label>
-                </div>
-                <div class="col-md-6">
-                    <label class="price-quotation-label">$0.00</label>
-                </div>
-            </div>
-
-            <div class="row mt-5">
-                <div class="col text-center">
-                    <input id="calculate" type="button" value="Calculate" class="button" />
-                    <input id="clear" type="button" value="Clear" class="button1" />
+        </div>
+        <div class="col-md-5 mb-4">
+            <div class="card shadow-sm h-100 border-0 hover-card">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Tip Calculator</h5>
+                    <p class="card-text text-muted">Estimate tips based on your meal cost with quick percentages.</p>
+                    <a href="/TipCalculator" class="btn btn-primary">Go to Tip Calculator</a>
                 </div>
             </div>
         </div>

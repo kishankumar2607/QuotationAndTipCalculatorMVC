@@ -10,6 +10,7 @@ out/
 *.sln.docstates
 
 # Visual Studio files
+.vs
 .vs/
 .vscode/
 *.ncb
