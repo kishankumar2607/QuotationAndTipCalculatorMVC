@@ -1,0 +1,56 @@
+# .NET build folders
+bin/
+obj/
+out/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# Visual Studio files
+.vs/
+.vscode/
+*.ncb
+*.sdf
+*.opensdf
+*.sln.ide
+
+# Rider files
+.idea/
+*.sln.iml
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Log and database files
+*.log
+*.tlog
+*.ldf
+*.mdf
+
+# Configuration transforms
+*.launchSettings.json
+
+# Backup & temporary files
+*~
+*.bak
+*.tmp
+
+# Publish folder
+publish/
+wwwroot/lib/
+
+# node_modules (if using front-end packages)
+node_modules/
+
+# Environment-specific files
+.env
+.env.*
+
+# JetBrains Rider cache
+.idea/
+
+# Custom rule: ignore secrets
+secrets.json
