@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Price Quotation";
+}
+
+<div class="py-5 my-5">
+    <div class="container price-quotation-div">
+        <div>
+            <h1 class="price-quotation-heading text-center">Price Quotation</h1>
+
+            <div class="row price-quotation-label-input-div mb-3">
+                <div class="col-md-6">
+                    <label class="text-black price-quotation-label">Enter Sub Total :</label>
+                </div>
+                <div class="col-md-6">
+                    <input id="subTotal" type="text" class="form-control price-quotation-input" />
+                </div>
+            </div>
+
+            <div class="row price-quotation-label-input-div mb-3">
+                <div class="col-md-6">
+                    <label class="text-black price-quotation-label">Discount Percentage :</label>
+                </div>
+                <div class="col-md-6">
+                    <input id="discountPercentage" type="text" class="form-control price-quotation-input" />
+                </div>
+            </div>
+
+            <div class="row price-quotation-label-input-div mb-3">
+                <div class="col-md-6">
+                    <label class="price-quotation-label">Discount Amount :</label>
+                </div>
+                <div class="col-md-6">
+                    <label class="price-quotation-label">$0.00</label>
+                </div>
+            </div>
+
+            <div class="row price-quotation-label-input-div mb-3">
+                <div class="col-md-6">
+                    <label class="price-quotation-label">Total Amount :</label>
+                </div>
+                <div class="col-md-6">
+                    <label class="price-quotation-label">$0.00</label>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col text-center">
+                    <input id="calculate" type="button" value="Calculate" class="button" />
+                    <input id="clear" type="button" value="Clear" class="button1" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
