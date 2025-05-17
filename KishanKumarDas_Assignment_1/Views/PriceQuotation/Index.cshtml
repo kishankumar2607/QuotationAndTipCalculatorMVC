@@ -4,7 +4,7 @@
     ViewData["Title"] = "Price Quotation";
 }
 
-<div class="py-5 my-5">
+<div class="main-div">
     <div class="container price-quotation-div">
         <div>
             <h1 class="price-quotation-heading text-center">Price Quotation</h1>
@@ -12,11 +12,11 @@
             <form asp-action="Index" method="post">
                 <div class="row price-quotation-label-input-div mb-3">
                     <div class="col-md-6">
-                        <label class="text-black price-quotation-label">Enter Sub Total :</label>
+                        <label class="text-black price-quotation-label">Subtotal :</label>
                     </div>
                     <div class="col-md-6">
                         <input asp-for="SubTotal" type="text" class="form-control price-quotation-input" />
-                        <span asp-validation-for="SubTotal" class="col text-danger"></span>
+                        @* <span asp-validation-for="SubTotal" class="col text-danger"></span> *@
                     </div>
                 </div>
 
@@ -26,7 +26,7 @@
                     </div>
                     <div class="col-md-6">
                         <input asp-for="DiscountPercent" type="text" class="form-control price-quotation-input" />
-                        <span asp-validation-for="DiscountPercent" class="col text-danger"></span>
+                        @* <span asp-validation-for="DiscountPercent" class="col text-danger"></span> *@
                     </div>
                 </div>
 
@@ -43,7 +43,7 @@
 
                 <div class="row price-quotation-label-input-div mb-3">
                     <div class="col-md-6">
-                        <label class="price-quotation-label">Total Amount :</label>
+                        <label class="price-quotation-label">Total:</label>
                     </div>
                     <div class="col-md-6">
                         <label class="price-quotation-label">
@@ -61,4 +61,62 @@
             </form>
         </div>
     </div>
+
+    <div class="mt-5 pt-3">
+        <div class="container price-quotation-another-div">
+            <div class="jumbotron jumbotron-fluid text-white text-center py-5 mb-4">
+                <div class="container">
+                    <h1><i class="fas fa-money-bill-alt"></i> Price Quotation</h1>
+                </div>
+            </div>
+
+            <div class="container">
+                <form asp-action="Index" method="post">
+                    <div class="row form-group align-items-center">
+                        <label class="col-sm-3 col-form-label text-sm-right">Subtotal:</label>
+                        <div class="col-sm-5">
+                            <input asp-for="SubTotal" class="form-control" />
+                        </div>
+                        <div class="col-sm-4">
+                            <span asp-validation-for="SubTotal" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row form-group align-items-center">
+                        <label class="col-sm-3 col-form-label text-sm-right">Discount percent:</label>
+                        <div class="col-sm-5">
+                            <input asp-for="DiscountPercent" class="form-control" />
+                        </div>
+                        <div class="col-sm-4">
+                            <span asp-validation-for="DiscountPercent" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row form-group align-items-center">
+                        <label class="col-sm-3 col-form-label text-sm-right">Discount amount:</label>
+                        <div class="col-sm-6">
+                            <p class="form-control-plaintext">$@(ViewBag.DiscountAmount ?? "0.00")</p>
+                        </div>
+                        <div class="col-sm-3"></div>
+                    </div>
+
+                    <div class="row form-group align-items-center">
+                        <label class="col-sm-3 col-form-label text-sm-right">Total:</label>
+                        <div class="col-sm-6">
+                            <p class="form-control-plaintext">$@(ViewBag.Total ?? "0.00")</p>
+                        </div>
+                        <div class="col-sm-3"></div>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col-sm-12">
+                            <button type="submit" class="btn btn-custom mr-2">Calculate</button>
+                            <a asp-action="Index" class="btn btn-custom">Clear</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
 </div>

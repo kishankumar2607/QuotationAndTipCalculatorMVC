@@ -4,11 +4,11 @@ namespace KishanKumarDas_Assignment_1.Models
 {
     public class PriceQuotationModel
     {
-        [Required(ErrorMessage ="Subtotal is required")]
+        [Required(ErrorMessage ="Please enter a sale price")]
         [Range(0, double.MaxValue, ErrorMessage ="Subtotal must be greater than 0.")]
         public decimal? SubTotal { get; set; }
 
-        [Required(ErrorMessage ="Discount Percentage is required")]
+        [Required(ErrorMessage = "Please enter a discount price")]
         [Range(0,100, ErrorMessage ="Discount percentage must be between 0 to 100.")]
         public decimal? DiscountPercent { get; set; }
 
