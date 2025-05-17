@@ -1,7 +1,66 @@
-﻿@{
+﻿
+@model TipCalculatorModel
+
+@{
     ViewData["Title"] = "Tip Calculator";
 }
 
-<div>
-    <h1>Tip Calculator Page</h1>
+<div class="main-div">
+    <div class="container price-quotation-div">
+        <div>
+            <h1 class="price-quotation-heading text-center">Tip Calculator</h1>
+
+            <form asp-action="Index" method="post">
+                <div class="row price-quotation-label-input-div mb-3">
+                    <div class="col-md-6">
+                        <label class="text-black price-quotation-label">Cost of meal :</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input asp-for="MealCost" type="text" class="form-control price-quotation-input" />
+                        <span asp-validation-for="MealCost" class="col text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="row price-quotation-label-input-div mb-3">
+                    <div class="col-md-6">
+                        <label class="price-quotation-label">15% tip :</label>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="price-quotation-label">
+                            $@(ViewBag.Tip15 ?? "0.00")
+                        </label>
+                    </div>
+                </div>
+
+                <div class="row price-quotation-label-input-div mb-3">
+                    <div class="col-md-6">
+                        <label class="price-quotation-label">20% tip :</label>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="price-quotation-label">
+                            $@(ViewBag.Tip20 ?? "0.00")
+                        </label>
+                    </div>
+                </div>
+
+                <div class="row price-quotation-label-input-div mb-3">
+                    <div class="col-md-6">
+                        <label class="price-quotation-label">25% tip :</label>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="price-quotation-label">
+                            $@(ViewBag.Tip25 ?? "0.00")
+                        </label>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col text-center">
+                        <input id="calculate" type="submit" value="Calculate" class="button" />
+                        <a asp-action="Index" class="button1">Clear</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
