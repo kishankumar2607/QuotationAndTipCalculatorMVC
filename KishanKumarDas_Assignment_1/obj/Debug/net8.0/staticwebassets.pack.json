@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "E:\\Conestoga College\\Semester-4\\Advanced Programming with .NET\\Assignments\\KishanKumarDas_Assignment_1\\KishanKumarDas_Assignment_1\\wwwroot\\images\\banner.jpg",
+      "PackagePath": "staticwebassets\\images\\banner.jpg"
+    },
+    {
       "Id": "E:\\Conestoga College\\Semester-4\\Advanced Programming with .NET\\Assignments\\KishanKumarDas_Assignment_1\\KishanKumarDas_Assignment_1\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

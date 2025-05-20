@@ -2,27 +2,26 @@
     ViewData["Title"] = "Home";
 }
 
-<div class="container py-5">
-    <div class="text-center mb-5">
-        <h1 class="display-4 fw-bold">Welcome to the Utility App</h1>
-        <p class="lead text-muted">Choose a tool below to get started</p>
-    </div>
-
+<div class="banner">
+    <h1 class="header fw-bold">Welcome to the Utility App</h1>
+    <p class="description">Choose a tool below to get started</p>
+</div>
+<div class="container py-5 my-5">
     <div class="row justify-content-center">
         <div class="col-md-5 mb-4">
-            <div class="card shadow-sm h-100 border-0 hover-card">
+            <div class="card shadow-sm h-100 border-1 hover-card p-2">
                 <div class="card-body text-center">
                     <h5 class="card-title">Price Quotation</h5>
-                    <p class="card-text text-muted">Calculate discount and total from a subtotal and discount percentage.</p>
+                    <p class="card-text text-muted">You can calculate discount and total from a subtotal and discount percentage.</p>
                     <a href="/PriceQuotation" class="btn btn-primary">Go to Price Quotation</a>
                 </div>
             </div>
         </div>
         <div class="col-md-5 mb-4">
-            <div class="card shadow-sm h-100 border-0 hover-card">
-                <div class="card-body text-center">
+            <div class="card shadow-sm h-100 border-1 hover-card p-2">
+                <div class="card-body text-center d-flex flex-column align-items-center justify-content-center">
                     <h5 class="card-title">Tip Calculator</h5>
-                    <p class="card-text text-muted">Estimate tips based on your meal cost with quick percentages.</p>
+                    <p class="card-text text-muted">You can estimate your tips based on your meal cost with quick percentages.</p>
                     <a href="/TipCalculator" class="btn btn-primary">Go to Tip Calculator</a>
                 </div>
             </div>
