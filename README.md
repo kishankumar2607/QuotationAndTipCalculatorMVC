@@ -48,4 +48,4 @@ Each feature is implemented as a separate page in the application, following the
 1. **Clone the repository**:
 
 ```bash
-git clone https://github.com/your-username/PriceAndTipCalculatorApp.git
+git clone https://github.com/kishankumar2607/QuotationAndTipCalculatorMVC.git
